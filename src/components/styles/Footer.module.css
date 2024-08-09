@@ -1,0 +1,70 @@
+.footer {
+  background-color: var(--red);
+  min-height: 50vh;
+  max-height: max-content;
+  display: flex;
+  margin-top: 6.5rem;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.footer > div {
+  max-width: 30rem;
+  min-width: 30rem;
+  height: 30rem;
+  color: var(--white);
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+.footer h3 {
+  font-style: oblique;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.footer p {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 3rem 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.nav ul {
+  list-style: none;
+  margin-top: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+
+.nav ul li a {
+  color: var(--white);
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav ul li a:hover {
+  color: var(--green);
+}
+
+.map {
+  width: auto;
+  height: 100%;
+}

@@ -1,0 +1,118 @@
+{
+  "pizzas": [
+    {
+      "name": "Margherita",
+      "image": "https://foodish-api.com/images/pizza/pizza1.jpg",
+      "ingredients": ["Tomato Sauce", "Mozzarella Cheese", "Basil"],
+      "price_in_inr": 250
+    },
+    {
+      "name": "Pepperoni",
+      "image": "https://foodish-api.com/images/pizza/pizza2.jpg",
+      "ingredients": ["Tomato Sauce", "Mozzarella Cheese", "Pepperoni"],
+      "price_in_inr": 350
+    },
+    {
+      "name": "BBQ Chicken",
+      "image": "https://foodish-api.com/images/pizza/pizza3.jpg",
+      "ingredients": [
+        "BBQ Sauce",
+        "Grilled Chicken",
+        "Onions",
+        "Mozzarella Cheese"
+      ],
+      "price_in_inr": 400
+    },
+    {
+      "name": "Veggie Supreme",
+      "image": "https://foodish-api.com/images/pizza/pizza4.jpg",
+      "ingredients": [
+        "Tomato Sauce",
+        "Mozzarella Cheese",
+        "Bell Peppers",
+        "Onions",
+        "Olives",
+        "Sweet Corn"
+      ],
+      "price_in_inr": 300
+    },
+    {
+      "name": "Hawaiian",
+      "image": "https://foodish-api.com/images/pizza/pizza5.jpg",
+      "ingredients": ["Tomato Sauce", "Mozzarella Cheese", "Ham", "Pineapple"],
+      "price_in_inr": 350
+    },
+    {
+      "name": "Mushroom Feast",
+      "image": "https://foodish-api.com/images/pizza/pizza6.jpg",
+      "ingredients": [
+        "Garlic Cream Sauce",
+        "Mozzarella Cheese",
+        "Mushrooms",
+        "Parmesan Cheese"
+      ],
+      "price_in_inr": 320
+    },
+    {
+      "name": "Four Cheese",
+      "image": "https://foodish-api.com/images/pizza/pizza7.jpg",
+      "ingredients": [
+        "Tomato Sauce",
+        "Mozzarella Cheese",
+        "Parmesan Cheese",
+        "Cheddar Cheese",
+        "Blue Cheese"
+      ],
+      "price_in_inr": 400
+    },
+    {
+      "name": "Spicy Mexican",
+      "image": "https://foodish-api.com/images/pizza/pizza8.jpg",
+      "ingredients": [
+        "Tomato Sauce",
+        "Mozzarella Cheese",
+        "Jalapeños",
+        "Bell Peppers",
+        "Red Onions"
+      ],
+      "price_in_inr": 350
+    },
+    {
+      "name": "Paneer Tikka",
+      "image": "https://foodish-api.com/images/pizza/pizza9.jpg",
+      "ingredients": [
+        "Tomato Sauce",
+        "Mozzarella Cheese",
+        "Paneer",
+        "Onions",
+        "Capsicum",
+        "Tandoori Spices"
+      ],
+      "price_in_inr": 370
+    },
+    {
+      "name": "Chicken Alfredo",
+      "image": "https://foodish-api.com/images/pizza/pizza10.jpg",
+      "ingredients": [
+        "Alfredo Sauce",
+        "Grilled Chicken",
+        "Mushrooms",
+        "Mozzarella Cheese"
+      ],
+      "price_in_inr": 380
+    },
+    {
+      "name": "Meat Lover's",
+      "image": "https://foodish-api.com/images/pizza/pizza11.jpg",
+      "ingredients": [
+        "Tomato Sauce",
+        "Mozzarella Cheese",
+        "Pepperoni",
+        "Ham",
+        "Sausage",
+        "Bacon"
+      ],
+      "price_in_inr": 450
+    }
+  ]
+}

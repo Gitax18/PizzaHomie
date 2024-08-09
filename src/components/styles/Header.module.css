@@ -1,0 +1,44 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 4rem;
+  height: 10vh;
+  background-color: var(--orange);
+  box-sizing: content-box;
+}
+
+.nav ul {
+  display: flex;
+  gap: 3.6rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav a {
+  font-size: 2.4rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.nav a:global(.active) {
+  color: var(--red);
+}
+
+.nav a:global(.active) .btn-login {
+  scale: 0.9;
+  border: 0.2rem solid var(--red);
+  padding: 0.4rem 3.2rem;
+}
+
+.btn-login {
+  background-color: var(--green);
+  border: none;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--white);
+  padding: 0.6rem 3.4rem;
+  border-radius: 50px;
+  cursor: pointer;
+}

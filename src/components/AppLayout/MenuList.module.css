@@ -1,0 +1,105 @@
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  justify-content: center;
+  align-items: end;
+  padding-inline: 3rem;
+}
+
+/* For Error */
+.container h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card {
+  height: 36rem;
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-white);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card img {
+  height: 45%;
+  width: 100%;
+}
+
+.content {
+  padding: 1.2rem;
+}
+
+.content h4 {
+  font-size: 2.2rem;
+  color: white;
+}
+
+.content p {
+  font-size: 1.4rem;
+  margin-block: 0.8rem;
+  font-weight: 600;
+  color: #474747;
+}
+
+.content span {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.container button {
+  height: 3rem;
+  width: 60%;
+  align-self: center;
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 670px) {
+  .container {
+    padding-inline: 1rem;
+    gap: 4rem;
+  }
+
+  .card {
+    height: 48rem;
+    max-height: max-content;
+    padding-bottom: 1.6rem;
+    width: 100%;
+  }
+
+  .card h4 {
+    font-size: 3.2rem;
+  }
+
+  .card p {
+    font-size: 2rem;
+  }
+
+  .card span {
+    font-size: 2.4rem;
+  }
+
+  .card button {
+    font-size: 2.4rem;
+    margin: 0.8rem 0;
+    padding: 2.4rem;
+    height: 4rem;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

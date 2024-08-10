@@ -64,7 +64,7 @@ function Footer() {
       </div>
 
       {/* Location container (Map) */}
-      <div>
+      <div className={styles.mapContainer}>
         <img src="./images/map.png" className={styles.map} />
       </div>
     </div>

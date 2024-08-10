@@ -10,18 +10,18 @@
   padding: 5%;
 }
 
-h1 {
+.container h1 {
   font-size: 8rem;
   line-height: 1;
   letter-spacing: 2px;
   color: var(--yellow);
 }
 
-h1 em {
+.container h1 em {
   color: var(--white);
 }
 
-hr {
+.container hr {
   background-color: var(--white);
   height: 1vh;
   border-radius: 50px;
@@ -36,7 +36,7 @@ hr {
   margin-top: 10%;
 }
 
-div > span {
+.container div > span {
   font-size: 2rem;
   font-weight: 600;
   padding: 0.8rem;
@@ -48,11 +48,11 @@ div > span {
   justify-content: center;
 }
 
-div > span:nth-of-type(even) {
+.container div > span:nth-of-type(even) {
   background-color: var(--red);
 }
 
-div > span:nth-of-type(odd) {
+.container div > span:nth-of-type(odd) {
   background-color: var(--yellow);
 }
 
@@ -78,7 +78,7 @@ div > span:nth-of-type(odd) {
   height: 100vh;
 }
 
-h2 {
+.container h2 {
   font-size: 4.8rem;
   margin: 4rem 0 2rem;
   color: var(--yellow);
@@ -109,4 +109,73 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 1420px) {
+  .pizza,
+  .pizzaSlices {
+    width: 100%;
+  }
+
+  .right {
+    padding: 10%;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .right,
+  .left {
+    height: 110vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    height: max-content;
+  }
+
+  .right,
+  .left {
+    width: 100vw;
+    height: 75vh;
+    /* padding: 5%; */
+  }
+  .pizza,
+  .pizzaSlices {
+    width: 50%;
+  }
+  .container:nth-of-type(odd) {
+    flex-direction: column;
+  }
+  .container:nth-of-type(even) {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .container h1 {
+    font-size: 7rem;
+  }
+  .pizza,
+  .pizzaSlices {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .pizza,
+  .pizzaSlices {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .right,
+  .left {
+    height: 80vh;
+  }
+  .pizza,
+  .pizzaSlices {
+    width: 140%;
+  }
 }

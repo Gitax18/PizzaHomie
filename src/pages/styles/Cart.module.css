@@ -1,0 +1,9 @@
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.container h3 {
+  font-size: 3.6rem;
+  text-align: center;
+}

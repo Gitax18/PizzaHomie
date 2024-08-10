@@ -1,0 +1,19 @@
+.container {
+  background-color: var(--yellow);
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem 0;
+}
+
+.main {
+  min-height: 100vh;
+  max-height: max-content;
+  width: 90vw;
+  padding: 2.4rem;
+  margin: 2.4rem auto;
+}

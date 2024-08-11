@@ -1,30 +1,39 @@
 /* eslint-disable react/prop-types */
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import ReactDOM from "react-dom";
+
 import styles from "./CartItems.module.css";
 
-function Item({ item, setCart, setBill }) {
-  const [quantity, setQuantity] = useState(1);
-
-  useEffect(
-    function () {
-      setBill((bill) => bill + item.price_in_inr * item.quantity);
-    },
-    [item.price_in_inr, item.quantity, setBill]
-  );
+function Item({ item, setCart }) {
+  const [quantity, setQuantity] = useState(item.quantity);
 
   function increaseQuantity() {
-    setCart((cart) =>
-      cart.map((it) => (it.id === item.id ? { ...it, quantity: quantity } : it))
-    );
-    setQuantity((quantity) => quantity + 1);
+    ReactDOM.flushSync(() => {
+      setQuantity((quantity) => quantity + 1);
+    });
+
+    ReactDOM.flushSync(() => {
+      setCart((cart) =>
+        cart.map((it) =>
+          it.id === item.id ? { ...it, quantity: quantity } : it
+        )
+      );
+    });
   }
 
   function decreaseQuantity() {
-    setCart((cart) =>
-      cart.map((it) => (it.id === item.id ? { ...it, quantity: quantity } : it))
-    );
-    if (quantity === 1) setQuantity(1);
-    else setQuantity((quantity) => quantity - 1);
+    ReactDOM.flushSync(() => {
+      if (quantity === 1) setQuantity(1);
+      else setQuantity((quantity) => quantity - 1);
+    });
+
+    ReactDOM.flushSync(() => {
+      setCart((cart) =>
+        cart.map((it) =>
+          it.id === item.id ? { ...it, quantity: quantity } : it
+        )
+      );
+    });
   }
 
   return (
@@ -35,7 +44,7 @@ function Item({ item, setCart, setBill }) {
           <h4>{item.name}</h4>
           <div className={styles.changeQuantity}>
             <button onClick={decreaseQuantity}>-</button>
-            <span>{quantity}</span>
+            <span>{item.quantity}</span>
             <button onClick={increaseQuantity}>+</button>
           </div>
         </div>
@@ -54,7 +63,7 @@ function Item({ item, setCart, setBill }) {
   );
 }
 
-function CartItems({ cart, setCart, setBill }) {
+function CartItems({ cart, setCart }) {
   if (cart.length === 0)
     return (
       <div className={styles.notFoundBox}>
@@ -67,7 +76,7 @@ function CartItems({ cart, setCart, setBill }) {
     <div className={styles.container}>
       <ul>
         {cart.map((item) => (
-          <Item item={item} key={item.id} setCart={setCart} setBill={setBill} />
+          <Item item={item} key={item.id} setCart={setCart} />
         ))}
       </ul>
     </div>

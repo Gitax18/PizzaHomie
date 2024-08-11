@@ -6,11 +6,7 @@ function Page404() {
     <div className={styles.container}>
       <div className={styles.message}>
         <span>4</span>
-        <img
-          src="./images/pizza-vector.png"
-          alt="pizza vector"
-          className={styles.img}
-        />
+        <img src="pizza-vector.png" alt="pizza vector" className={styles.img} />
         <span>4</span>
       </div>
       <h2>Page not found</h2>

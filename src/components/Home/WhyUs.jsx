@@ -7,7 +7,7 @@ function WhyUs({ styles }) {
     <>
       <div className={styles.container}>
         <div className={`${styles.left} ${styles.fullHeight} ${styles.center}`}>
-          <img src="./images/pizza-slices.png" className={styles.pizzaSlices} />
+          <img src="pizza-slices.png" className={styles.pizzaSlices} />
         </div>
         <div className={`${styles.right} ${styles.fullHeight}`}>
           <h2>Why Us ?</h2>

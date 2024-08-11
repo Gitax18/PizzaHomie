@@ -15,7 +15,7 @@ function Hero({ styles }) {
         </div>
       </div>
       <div className={`${styles.left} ${styles.center}`}>
-        <img src="./images/pizza-full.png" className={styles.pizza} />
+        <img src="pizza-full.png" className={styles.pizza} />
       </div>
     </div>
   );

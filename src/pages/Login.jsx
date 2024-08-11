@@ -10,7 +10,7 @@ function Login() {
       <Header />
       <div className={styles.container}>
         <Form styles={styles} />
-        <img src="./images/hot-pizza.jpg" alt="pizza" />
+        <img src="hot-pizza.jpg" alt="pizza" />
       </div>
       <Footer />
     </div>

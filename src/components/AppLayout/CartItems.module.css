@@ -1,5 +1,115 @@
+.notFoundBox {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 3%;
+}
+
+.notFoundBox img {
+  width: 24rem;
+  height: 1auto;
+}
+
+/* Main container */
+
 .container {
   background-color: var(--white);
   width: 40vw;
   margin: 2.4rem auto;
+  border-radius: 20px;
+}
+
+.container ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-direction: column;
+  padding: 2.8rem 0;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10rem;
+  width: 90%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cartItem div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.cartImage {
+  height: 100%;
+  width: 12rem;
+}
+
+.detailBox {
+  gap: 2.4rem;
+  width: 80%;
+}
+
+.detailBox h4 {
+  font-size: 2rem;
+}
+
+.detailBox > div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.changeQuantity {
+  min-width: 8rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 50px;
+  flex-basis: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.changeQuantity button {
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 1px solid #0000002f;
+  font-size: 2rem;
+  font-weight: 900;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.priceBox {
+  gap: 1.2rem;
+  width: 30%;
+}
+
+.priceBox strong {
+  font-size: 1.8rem;
+}
+
+.priceBox button {
+  height: 30%;
+  aspect-ratio: 1/1;
+  font-size: 2rem;
+  font-weight: 900;
+  border-radius: 50%;
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

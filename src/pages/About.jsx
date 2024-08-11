@@ -9,7 +9,7 @@ function About() {
       <Header />
       <div className={styles.container}>
         <div className={styles.left}>
-          <img src="./images/customersEating.jpg" alt="pizza store customers" />
+          <img src="customersEating.jpg" alt="pizza store customers" />
         </div>
         <div className={styles.right}>
           <h2>About Us</h2>

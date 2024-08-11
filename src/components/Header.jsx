@@ -36,7 +36,7 @@ function Header() {
         </li>
       </ul>
       <button className={styles.more} onClick={setMenu}>
-        <img src="./icons/more.png" alt="hamburger icon" />
+        <img src="more.png" alt="hamburger icon" />
       </button>
     </nav>
   );

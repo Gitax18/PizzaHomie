@@ -15,19 +15,19 @@ function Footer() {
             to="https://www.facebook.com/gitanshu.sankhala/"
             target="_blank"
           >
-            <img src="./icons/facebook.png" />
+            <img src="/facebook.png" />
           </Link>
           <Link to="https://www.instagram.com/gitanshusankhla/" target="_blank">
-            <img src="./icons/instagram.png" />
+            <img src="/instagram.png" />
           </Link>
           <Link
             to="https://www.linkedin.com/in/gitanshu-sankhla/"
             target="_blank"
           >
-            <img src="./icons/linkedin.png" />
+            <img src="/linkedin.png" />
           </Link>
           <Link to="https://x.com/lusifercodes" target="_blank">
-            <img src="./icons/twitter.png" />
+            <img src="/twitter.png" />
           </Link>
         </div>
         <p>
@@ -65,7 +65,7 @@ function Footer() {
 
       {/* Location container (Map) */}
       <div className={styles.mapContainer}>
-        <img src="./images/map.png" className={styles.map} />
+        <img src="/map.png" className={styles.map} />
       </div>
     </div>
   );
